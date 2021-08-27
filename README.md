@@ -8,7 +8,7 @@ DefAn-for-GNSS-networks folder:
   * 'DefAnforGNSS.R' (download, and open this file on your RStudio Desktop)
   * 'Reporting.Rmd' (R markdown file for reporting the analysis results)
   * 'DefAnforGNSS.Rproj' (R project file to automatically open RStudio Desktop)
-  * User Guide (instructions to use application)
+  * User Guide (instructions to use software)
 
 
 Sample data folder: 
@@ -22,3 +22,5 @@ Sample output results folder:
 _Last Modified August 27, 2021, Burhaneddin Bilgen_
 
 Please contact Burhaneddin Bilgen (bbilgen@ktun.edu.tr) with any problems, questions, or concerns.
+
+>version 1.0 (unpublished)
