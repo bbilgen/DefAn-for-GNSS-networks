@@ -23,4 +23,4 @@ _Last Modified August 27, 2021, Burhaneddin Bilgen_
 
 Please contact Burhaneddin Bilgen (bbilgen@ktun.edu.tr) with any problems, questions, or concerns.
 
->version 1.0 (unpublished)
+>version 1.0 (initial public release)
