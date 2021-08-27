@@ -1,5 +1,5 @@
 # DefAn-for-GNSS-networks
-DefAnforGNSS is a new software for geodetic deformation analysis in GNSS networks. The software determines absolute deformations in the GNSS network established for detecting deformations on engineering sturctures and earth's crust, illustrates input data and output results, and provides results as reports in two different formats HTML and PDF. 
+DefAnforGNSS is a new scientific software encoded in R programming language for carrying out geodetic deformation analysis in GNSS networks using Bernese v5.2-based output files. The software determines absolute deformations in the GNSS network established for detecting deformations on engineering structures and earth's crust, illustrates input data and output results, and provides results as reports in two different formats HTML and PDF. 
 
 The software requires the R package and RStudio editor, and runs on RStudio Desktop v1.4 or newer versions.
 
