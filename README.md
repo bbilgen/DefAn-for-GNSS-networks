@@ -5,7 +5,7 @@ The software requires the R package and RStudio editor, and runs on RStudio Desk
 
 
 DefAn-for-GNSS-networks folder:
-  * 'DefAnforGNSS.R' (download and open this file on your RStudio Desktop)
+  * 'DefAnforGNSS.R' (download, and open this file on your RStudio Desktop)
   * 'Reporting.Rmd' (R markdown file for reporting the analysis results)
   * 'DefAnforGNSS.Rproj' (R project file to automatically open RStudio Desktop)
   * User Guide (instructions to use application)
