@@ -15,10 +15,6 @@ Sample data folder:
   * contains sample input data files for users to test the application 
 
 
-Sample output results folder: 
-  * contains sample output reports in HTML and PDF formats 
-
-
 _Last Modified September 01, 2021, Burhaneddin Bilgen_
 
 Please contact Burhaneddin Bilgen (bbilgen@ktun.edu.tr) with any problems, questions, or concerns.
