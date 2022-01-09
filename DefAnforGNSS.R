@@ -534,15 +534,15 @@ if (length(variant) == length(variant2)){
      pass = list()
      for (h in 1:length(cval)){
        if (as.numeric(cval[h]) > as.numeric(tval[h])){
-         pass [[h]] = rbind(pass, c("Variance ratio test passed"))
+         pass [[h]] = rbind(pass[h][!sapply(pass[h],is.null)], c("Variance ratio test passed"))
          cat(sprintf("Variance ratio test passed\n"))
          cat(sprintf("\n"))
        }else if(as.numeric(cval[h]) < as.numeric(tval[h])){
-         pass [[h]] = rbind(pass, tval1[[h]])
+         pass [[h]] = rbind(pass[h][!sapply(pass[h],is.null)], tval1[[h]])
          cat(sprintf("%s\n",tval1[[h]]))
          cat(sprintf("\n"))
        }else {
-         pass [[h]] = rbind(pass, c("Variance ratio test failed! Please carry out the adjustment computation again, after checking the adjustment parameters and stochastic model."))
+         pass [[h]] = rbind(pass[h][!sapply(pass[h],is.null)], c("Variance ratio test failed! Please carry out the adjustment computation again, after checking the adjustment parameters and stochastic model."))
          cat(sprintf("Variance ratio test failed! Please carry out the adjustment computation again, after checking the adjustment parameters and stochastic model.\n"))
          cat(sprintf("\n"))
        }
@@ -904,12 +904,12 @@ if (length(variant) == length(variant2)){
      if ("TRUE" %in% duplicated(matcdates)){
        for (p in 1:length(mortak)){
          pvlist = rbind(pvlist, c(sprintf("Pooled Variance Factor on %s : %s", format.Date (dates[[p+1]],format = "%d-%m-%Y"), format(round((as.numeric(mortak[[p]]^2)*1000000), 2), nsmall=2))))
-         tresult = rbind(tresult,c(paste(pass[[p]][[p]],c(sprintf("for %s",format.Date (dates[[p+1]],format = "%d-%m-%Y"))))))
+         tresult = rbind(tresult,c(paste(pass[[p]],c(sprintf("for %s",format.Date (dates[[p+1]],format = "%d-%m-%Y"))))))
        }
      }else {
        for (p in 1:length(mortak)){
          pvlist = rbind(pvlist, c(sprintf("Pooled Variance Factor on %s : %s", format.Date (dates[[matcdates[p+1]]], format = "%d-%m-%Y"), format(round((as.numeric(mortak[[p]]^2)*1000000), 2), nsmall=2))))
-         tresult = rbind(tresult,c(paste(pass[[p]][[p]],c(sprintf("for %s",format.Date (dates[[matcdates[p+1]]], format = "%d-%m-%Y"))))))
+         tresult = rbind(tresult,c(paste(pass[[p]],c(sprintf("for %s",format.Date (dates[[matcdates[p+1]]], format = "%d-%m-%Y"))))))
      }
     
      Sys.setenv(R_GSCMD="C:/Program Files/gs/gs9.53.3/bin/gswin64.exe")
