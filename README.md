@@ -27,7 +27,7 @@ source("C:/DefAn-for-GNSS-networks-main/DefAnforGNSS.R")
 ```
 Then, file selection dialog will start on your computer for selecting the .OUT extensioned input files. You must select both F1_162080.OUT and F1_162090.OUT files from the downloaded "Sample data" directory and click "Open" button. After that, file selection dialog will start again on your computer for selecting the .SNX extensioned input files.  You must select both F1_162080.SNX and F1_162090.SNX files from the downloaded "Sample data" directory and click "Open" button. Then, the software will start processing files, perform geodetic deformation analysis and write two output reports which are named as "Reporting.html" and "Reporting.pdf" in the downloaded and unzipped directory in "C:\". You will be able to access geodetic deformation analysis results by opening one of the reports produced by the software.
 
-To use the software for your own GNSS deformation network, two types of Bernese v5.2 files (.SNX and .OUT extensioned files) of at least two GNSS campaign processing results must be copied in the "Sample data" directory.
+To use the software for your own GNSS deformation network, two types of Bernese v5.2 files (.SNX and .OUT extensioned files) of at least two GNSS campaign processing results must be copied in the "Sample data" directory. Then, the software should be run and these files should be selected to perform geodetic deformation analysis.
 
 # Contents of the archived directory
 In DefAn-for-GNSS-networks-main folder:
