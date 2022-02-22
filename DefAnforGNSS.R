@@ -15,7 +15,7 @@
 #                                                                              #
 #                                                                              #
 #     Please report any bug, error or suggestion to bbilgen@ktun.edu.tr        #
-#                                                                              #
+#                                                                              
 ################################################################################
 
 
