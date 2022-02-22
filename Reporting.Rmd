@@ -1,5 +1,5 @@
 ---
-title: "GEODETIC DEFORMATION ANALYSIS REPOR"
+title: "GEODETIC DEFORMATION ANALYSIS REPORT"
 author: "by DefAn-for-GNSS-networks"
 date:  '`r format.Date (Sys.Date(),format = "%d %m %Y")`'
 output: 
