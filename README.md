@@ -15,7 +15,7 @@ install.packages('dplyr', 'ISwR', 'matlib', 'readr', 'rmarkdown', 'rstudioapi', 
 
 The following ‘tinytex’ package must also be installed so that the program generates PDF and HTML result reports. For this, type the following codes on the RStudio console, respectively:
 ```
-install.packages('tinytex' , dependencies = TRUE)
+install.packages('tinytex', dependencies = TRUE)
 ```
 ```
 tinytex :: install_tinytex()
