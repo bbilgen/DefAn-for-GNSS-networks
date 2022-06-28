@@ -10,7 +10,7 @@ To run the software, first download the R v4.1.1 or newer version from https://c
 
 Open the R studio desktop and type the following code via RStudio Console for installing the required packages:
 ```
-install.packages('dplyr' , 'ISwR' , 'matlib'  , 'readr', 'rmarkdown' , 'rstudioapi' , 'stringr' , dependencies = TRUE)
+install.packages('dplyr', 'ISwR', 'matlib', 'readr', 'rmarkdown', 'rstudioapi', 'stringr', dependencies = TRUE)
 ```
 
 The following ‘tinytex’ package must also be installed so that the program generates PDF and HTML result reports. For this, type the following codes on the RStudio console, respectively:
