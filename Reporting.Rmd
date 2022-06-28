@@ -133,27 +133,27 @@ for (p in 1:length(both)){
     counts = rbind(counts, as.numeric(restab[[p]][,4])/10)
     colnames(counts) = c(both[[p]])
     rownames(counts) = c("DX","DY","DZ")
-    barplot(counts, main=sprintf("Point Displacements in Direction of Coordinate Axes on %s",format.Date(dates[[p+1]],format = "%d-%m-%Y")), xlab="Name of Points", ylab="Displacement (cm)", col=c("darkblue","green","magenta"), legend = rownames(counts), beside=TRUE, space = c(0.4, 2.5), cex.main=0.75)
+    barplot(counts, main=sprintf("Point Displacements in Direction of Coordinate Axes on %s",format.Date(dates[[p+1]],format = "%d-%m-%Y")), xlab="Name of Points", ylab="Displacement (cm)", col=c("blue","green","red"), legend = rownames(counts), beside=TRUE, space = c(0.4, 2.5), cex.main=0.75)
   
     counts = matrix(as.numeric(restab1[[p]][,2])/10,1,length(restab1[[p]][,2]))
     counts = rbind(counts, as.numeric(restab1[[p]][,3])/10)
     counts = rbind(counts, as.numeric(restab1[[p]][,4])/10)
     colnames(counts) = c(both[[p]])
     rownames(counts) = c("Dn","De","Du")
-    barplot(counts, main=sprintf("Point Displacements in Direction of Topocentric Coordinate Axes on %s",format.Date(dates[[p+1]],format = "%d-%m-%Y")), xlab="Name of Points", ylab="Displacement (cm)", col=c("darkblue","green","magenta"), legend = rownames(counts), beside=TRUE, space = c(0.4, 2.5), cex.main=0.75)
+    barplot(counts, main=sprintf("Point Displacements in Direction of Topocentric Coordinate Axes on %s",format.Date(dates[[p+1]],format = "%d-%m-%Y")), xlab="Name of Points", ylab="Displacement (cm)", col=c("blue","green","red"), legend = rownames(counts), beside=TRUE, space = c(0.4, 2.5), cex.main=0.75)
   }else
     counts = matrix(as.numeric(restab[[p]][,2])/10,1,length(restab[[p]][,2]))
     counts = rbind(counts, as.numeric(restab[[p]][,3])/10)
     counts = rbind(counts, as.numeric(restab[[p]][,4])/10)
     colnames(counts) = c(both[[p]])
     rownames(counts) = c("DX","DY","DZ")
-    barplot(counts, main=sprintf("Point Displacements in Direction of Coordinate Axes on %s",format.Date(dates[[matcdates[p+1]]],format = "%d-%m-%Y")), xlab="Name of Points", ylab="Displacement (cm)", col=c("darkblue","green","magenta"), legend = rownames(counts), beside=TRUE, space = c(0.4, 2.5), cex.main=0.75)
+    barplot(counts, main=sprintf("Point Displacements in Direction of Coordinate Axes on %s",format.Date(dates[[matcdates[p+1]]],format = "%d-%m-%Y")), xlab="Name of Points", ylab="Displacement (cm)", col=c("blue","green","red"), legend = rownames(counts), beside=TRUE, space = c(0.4, 2.5), cex.main=0.75)
   
     counts = matrix(as.numeric(restab1[[p]][,2])/10,1,length(restab1[[p]][,2]))
     counts = rbind(counts, as.numeric(restab1[[p]][,3])/10)
     counts = rbind(counts, as.numeric(restab1[[p]][,4])/10)
     colnames(counts) = c(both[[p]])
     rownames(counts) = c("Dn","De","Du")
-    barplot(counts, main=sprintf("Point Displacements in Direction of Topocentric Coordinate Axes on %s",format.Date(dates[[matcdates[p+1]]],format = "%d-%m-%Y")), xlab="Name of Points", ylab="Displacement (cm)", col=c("darkblue","green","magenta"), legend = rownames(counts), beside=TRUE, space = c(0.4, 2.5), cex.main=0.75)
+    barplot(counts, main=sprintf("Point Displacements in Direction of Topocentric Coordinate Axes on %s",format.Date(dates[[matcdates[p+1]]],format = "%d-%m-%Y")), xlab="Name of Points", ylab="Displacement (cm)", col=c("blue","green","red"), legend = rownames(counts), beside=TRUE, space = c(0.4, 2.5), cex.main=0.75)
 }
 ```
