@@ -6,7 +6,7 @@ DefAn-for-GNSS-networks is a new scientific software encoded in R programming la
 Click on the green "Code" button and "Download.ZIP". Unzip the downloaded zip archive in "C:/" directory on your computer.
 
 # Instructions to run
-To run the software, first download the R v4.1.1 or newer version from https://cran.r-project.org and RStudio Desktop v1.4 or newer version from https://www.rstudio.com for your operating system and install them. It should be noted that RStudio requires R v3.0.1 or newer versions.
+To run the software, first download the R v4.1.1 or newer version from https://cran.r-project.org and RStudio Desktop v1.4 or newer version from https://www.rstudio.com for your operating system and install them. It should be noted that RStudio requires R v3.0.1 or newer versions. To install the necessary packages, download and install the current version of Rtools from https://cran.rstudio.com/bin/windows/Rtools/rtools43/rtools.html.
 
 Open the R studio desktop and type the following code via RStudio Console for installing the required packages:
 ```
