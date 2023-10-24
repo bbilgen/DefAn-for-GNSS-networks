@@ -851,24 +851,24 @@ if (length(variant) == length(variant2)){
       }
       
       #Forming the results tables
-      restab[[h]] = matrix(both[[h]],length(status[[h]]),1)
+      restab[[h]] = matrix(sort(both[[h]]),length(status[[h]]),1)
       restab[[h]] = cbind(restab[[h]],formatC(matrix(dfin[[h]][diz],length(status[[h]]),1),digits = 4,format = "f"))
       restab[[h]] = cbind(restab[[h]],formatC(matrix(dfin[[h]][diz+1],length(status[[h]]),1),digits = 4,format = "f"))
       restab[[h]] = cbind(restab[[h]],formatC(matrix(dfin[[h]][diz+2],length(status[[h]]),1),digits = 4,format = "f"))
       restab[[h]] = cbind(restab[[h]],formatC(dplc[[h]],digits = 4,format = "f"))
       restab[[h]] = cbind(restab[[h]],formatC(tist[[h]],digits = 4,format = "f"))
       restab[[h]] = cbind(restab[[h]],statusfin[[h]])
-      rownames(restab[[h]]) = c(both[[h]])
+      rownames(restab[[h]]) = c(sort(both[[h]]))
       colnames(restab[[h]]) = c("Station", "DX (mm)", "DY (mm)","DZ (mm)","Disp Vector (mm)","Test Value","Status")
       print(restab[[h]], digits = 4, na.print = "",zero.print = "0")
       cat(sprintf("\n"))
       
-      restab1[[h]] = matrix(both[[h]],length(status[[h]]),1)
+      restab1[[h]] = matrix(sort(both[[h]]),length(status[[h]]),1)
       restab1[[h]] = cbind(restab1[[h]],formatC(matrix(dndedu1[[h]][diz],length(status[[h]]),1),digits = 4,format = "f"))
       restab1[[h]] = cbind(restab1[[h]],formatC(matrix(dndedu1[[h]][diz+1],length(status[[h]]),1),digits = 4,format = "f"))
       restab1[[h]] = cbind(restab1[[h]],formatC(matrix(dndedu1[[h]][diz+2],length(status[[h]]),1),digits = 4,format = "f"))
       restab1[[h]] = cbind(restab1[[h]],formatC(dplc1[[h]],digits = 4,format = "f"))
-      rownames(restab1[[h]]) = c(both[[h]])
+      rownames(restab1[[h]]) = c(sort(both[[h]]))
       colnames(restab1[[h]]) = c("Station", "Dn (mm)", "De (mm)","Du (mm)","Disp Vector (mm)")
       print(restab1[[h]], digits = 4, na.print = "",zero.print = "0")
       cat(sprintf("\n"))
